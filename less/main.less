@@ -1,3 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Merriweather|Raleway|Cinzel|Roboto:300,400,500');
+// MY SCREEN @VARIABLES
+@screen-xs: 370px;
+@screen-sm: 500px;
+@screen-md: 768px;
+@screen-lg: 1200px;
 body {
-	background: purple;
+    // font-family: 'Montserrat', serif;
+    // font-style: italic;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.a-container {
+    min-height: 100vh;
+    width: 100%;
+    .helper-container {
+        position: fixed;
+        top: 0;
+        min-height: 100vh;
+        width: 100%;
+        .main-container {
+            position: relative;
+            min-height: 100vh;
+            width: 90%;
+            margin-left: 40px;
+            .page-background {
+                position: fixed;
+                width: 880px;
+                top: 10%;
+                left: 50%;
+                margin-top: -100px;
+                margin-left: -450px;
+            }
+        }
+    }
+}
+
+.first-box {
+    padding: 28px;
+    width: 96%;
+    max-width: 472px;
+    // background: #fff;
+    margin: 70px auto 0 auto;
+    opacity: 0.9;
+    .header-content {
+        position: relative;
+        width: 100%;
+        .header-image {
+            // margin: 0 auto;
+            // position: relative;
+            // // width: 300px;
+            // padding: 0 10%;
+            margin-left: 27%;
+            width: 210px;
+        }
+        .header {
+            font-family: 'Raleway', serif;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 4px;
+            color: #000;
+        }
+        .text1 {
+            color: #000;
+        }
+        .text2 {
+            padding: 0 10%;
+            color: #000;
+            font-size: 12px;
+            // width: 278px;
+            font-family: Raleway;
+            text-align: center;
+        }
+        .social-connect {
+            text-align: center;
+            // text-decoration: none;
+            // font-size: 1.9em;
+        }
+        .social-connect:hover {
+            // text-align: center;
+            text-decoration: none;
+            // font-size: 1.9em;
+        }
+    }
+}
+
+.second-box {
+    padding: 20px;
+    width: 96%;
+    max-width: 472px;
+    background: #fff;
+    opacity: 0.9;
+    margin: 70px auto 0 auto;
+    .second-content {
+        .header-image {
+            display: static;
+            height: auto;
+            width: 100%;
+            height: 200px;
+            background: black;
+        }
+        .header {
+            font-family: 'Raleway', serif;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 4px;
+            color: #000;
+        }
+        .text1 {
+            color: #000;
+        }
+    }
+}
+
+.nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 40px;
+    float: left;
+    z-index: 1;
+}
+
+.nav-icon img {
+    position: relative;
+    left: 8px;
+    height: 20px;
+    margin: 10px 20px 12px 0;
+}
+
+.menu a {
+    display: block;
+    // font-family: 'Roboto', serif;
+    height: 70px;
+    width: 100px;
+    color: #0c0c0c;
+    text-decoration: none;
+    line-height: 8px;
+    margin: 5px 0 0;
+    text-align: center;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    .long-name {
+        display: block;
+        height: 70px;
+        width: 163px;
+        margin: 62px 0 0;
+    }
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.active-menu {
+    font-weight: bold;
+}
+
+.skillbar-open {
+    display: none;
+}
+
+.skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+}
+
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #6adcfa;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.skillbar-title span {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.note {
+    font-size: 11px;
+}
+
+@media screen and (max-width: 768px) {
+    .a-container {
+        .helper-container {
+            .main-container {
+                .page-background {
+                    position: fixed;
+                    width: 880px;
+                    top: 10%;
+                    left: 100%;
+                    margin-top: -100px;
+                    margin-left: -450px;
+                    opacity: 0.8
+                }
+            }
+        }
+    }
+    .first-box {
+        margin-top: 50px;
+    }
+    .first-box {
+        margin-top: 50px;
+        .header-content {
+            .header-image {
+                margin-left: 24%;
+                width: 164px;
+            }
+            .header {}
+            .text1 {}
+            .text2 {}
+            .social-connect {}
+        }
+    }
+    .second-box {
+        margin-top: 10px;
+    }
 }
