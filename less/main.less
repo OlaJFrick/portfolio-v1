@@ -13,6 +13,8 @@ a:hover {
     text-decoration: none;
 }
 
+// PAGE-BACKGROUND DIVS
+
 .a-container {
     min-height: 100vh;
     width: 100%;
@@ -38,6 +40,47 @@ a:hover {
     }
 }
 
+// FRONT-PAGE
+
+.front-box {
+    padding: 28px;
+    width: 96%;
+    max-width: 472px;
+    margin: 70px auto 0 auto;
+    opacity: 0.9;
+
+    .front-content {
+        position: relative;
+        width: 100%;
+
+        .front-image {
+            display: block;
+            margin: 18px auto;
+            max-width: 200px;
+        }
+
+        .social-connect {
+            text-align: center;
+            a{  
+                padding: 2px;
+            }
+        }
+
+        .front-text {
+            color: #000;
+            font-size: 13px;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            max-width: 250px;
+            margin: 0 auto 12px;
+        }
+    }
+}
+
+
+// SECTIONS FIRST BOX
+
+
 .first-box {
     padding: 28px;
     width: 96%;
@@ -45,9 +88,11 @@ a:hover {
     // background: #fff;
     margin: 70px auto 0 auto;
     opacity: 0.9;
+
     .header-content {
         position: relative;
         width: 100%;
+
         .header-image {
             // margin: 0 auto;
             // position: relative;
@@ -56,33 +101,17 @@ a:hover {
             margin-left: 27%;
             width: 210px;
         }
+
         .header {
-            font-family: 'Raleway', serif;
+            font-family: 'Raleway', sans-serif;
             font-size: 22px;
             font-weight: bold;
             margin-top: 4px;
             color: #000;
         }
+
         .text1 {
             color: #000;
-        }
-        .text2 {
-            padding: 0 10%;
-            color: #000;
-            font-size: 12px;
-            // width: 278px;
-            font-family: Raleway;
-            text-align: center;
-        }
-        .social-connect {
-            text-align: center;
-            // text-decoration: none;
-            // font-size: 1.9em;
-        }
-        .social-connect:hover {
-            // text-align: center;
-            text-decoration: none;
-            // font-size: 1.9em;
         }
     }
 }
@@ -255,9 +284,24 @@ a:hover {
             }
         }
     }
-    .first-box {
-        margin-top: 50px;
+
+    .front-box {
+       
+        .front-content {
+          
+            .front-image {
+              
+            }
+
+            .social-connect {
+
+            }
+            .front-text {
+                font-weight: bold;
+            }
+        }
     }
+
     .first-box {
         margin-top: 50px;
         .header-content {
@@ -267,11 +311,9 @@ a:hover {
             }
             .header {}
             .text1 {}
-            .text2 {}
-            .social-connect {}
-        }
     }
     .second-box {
         margin-top: 10px;
     }
+}
 }
